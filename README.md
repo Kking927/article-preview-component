@@ -50,7 +50,7 @@ One of the biggest challenges was handling the layout transition for the share m
 Resetting the mobile `inset` values using `inset: auto` on desktop made positioning the tooltip straightforward:
 
 ```css
-/* Mobile full-bleed overlay */
+/* Mobile overlay */
 .card__share-menu {
   display: none;
   position: absolute;
