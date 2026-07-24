@@ -228,7 +228,8 @@ main {
   inset: -1.25rem -2rem -1.5rem -2rem;
   background-color: var(--clr-primary);
   border-radius: 0 0 var(--radius-md) var(--radius-md);
-  padding: 1rem 2rem;
+  padding: clamp(0.75rem, 0.5rem + 1vw, 1rem)
+    clamp(1.25rem, 0.75rem + 2vw, 2rem);
   align-items: center;
   gap: var(--space-4);
   z-index: 10;
@@ -248,7 +249,7 @@ main {
 .card__share-links {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 
 .card__share-links a {
@@ -305,7 +306,7 @@ main {
     position: absolute;
     bottom: 4rem;
     right: -6.5rem;
-    padding: 1rem 2rem;
+    padding: clamp(0.75rem, 0.5rem + 1vw, 1rem) clamp(1.25rem, 0.75rem + 2vw, 2rem);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-card);
   }
