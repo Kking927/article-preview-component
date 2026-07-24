@@ -259,14 +259,14 @@ main {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.card__share-links a:hover {
-  opacity: 0.75;
-  transform: scale(1.15);
-}
-
 .card__share-links img {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.card__share-links a:hover {
+  opacity: 0.75;
+  transform: scale(1.15);
 }
 
 /* ==========================================================================
