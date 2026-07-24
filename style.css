@@ -225,11 +225,12 @@ main {
 .card__share-menu {
   display: none;
   position: absolute;
-  inset: -1.25rem -2rem -1.5rem -2rem;
+  inset: -1.25rem calc(-1 * clamp(var(--space-5), 1.25rem + 1vw, var(--space-6))) 
+         calc(-1 * clamp(var(--space-5), 1.25rem + 1vw, var(--space-6))) 
+         calc(-1 * clamp(var(--space-5), 1.25rem + 1vw, var(--space-6)));
   background-color: var(--clr-primary);
   border-radius: 0 0 var(--radius-md) var(--radius-md);
-  padding: clamp(0.75rem, 0.5rem + 1vw, 1rem)
-    clamp(1.25rem, 0.75rem + 2vw, 2rem);
+  padding: clamp(0.75rem, 0.5rem + 1vw, 1rem) clamp(1.25rem, 0.75rem + 2vw, 2rem);
   align-items: center;
   gap: var(--space-4);
   z-index: 10;
@@ -303,8 +304,8 @@ main {
   .card__share-menu {
     inset: auto;
     position: absolute;
-    bottom: 4rem;
-    right: -6.5rem;
+    bottom: 3.5rem;
+    right: -1rem; 
     padding: clamp(0.75rem, 0.5rem + 1vw, 1rem) clamp(1.25rem, 0.75rem + 2vw, 2rem);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-card);
@@ -314,8 +315,7 @@ main {
     content: "";
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 1.5rem; 
     border-width: 10px;
     border-style: solid;
     border-color: var(--clr-primary) transparent transparent transparent;
