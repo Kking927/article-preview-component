@@ -87,4 +87,5 @@ shareBtn.addEventListener("click", () => {
  ## Author
 
 
-- Frontend Mentor - [@Kking927](https://www.frontendmentor.io/profile/Kking927) 
+- Frontend Mentor - [@Kking927](https://www.frontendmentor.io/profile/Kking927)
+- GitHub - [Kking927](https://github.com/Kking927)
